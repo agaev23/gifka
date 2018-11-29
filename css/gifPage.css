@@ -1,0 +1,85 @@
+#gifPage{
+	display: none;
+}
+
+.gif-page-content{
+	width: 60%;
+	margin: 0 auto;
+	padding: 10px 40px;
+}
+
+.btn-back {
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	background-color: #5ac000;
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+}
+
+.gif-page-content .gif-title{
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+.gif-img{
+	display: block;
+	max-width: 100%;
+	margin: 10px auto;
+}
+
+.gif-page-content .gif-data{
+	margin-bottom: 20px;
+	color: #adadad;
+}
+
+.gif-desc {
+	margin-bottom: 20px;
+}
+
+.comments-wrap{
+	padding: 10px;
+	padding-bottom: 0;
+}
+
+.comment-wrap{
+	padding-left: 50px;
+	border-bottom: 1px solid #2882f9;
+}
+
+.comment-wrap:last-child{
+	border: none;
+}
+
+.comment-name{
+	position: relative;
+	margin: 10px 0 5px;
+	font-size: 17px;
+	color: #fff;
+}
+
+.comment-name::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: -50px;
+	top: 0;
+	background-image: url(../img/face.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.comment-email{
+	margin: 3px 0;
+	font-size: 12px;
+	color: #fff;
+}
+
+.comment-body{
+	margin: 15px 0;
+}

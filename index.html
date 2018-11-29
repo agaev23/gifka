@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Gifka</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/aside.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/gifPage.css">
+	<link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="wrapper">
+			<a href="#" id="main-logo"><div class="logo">Гифка</div></a>
+			<nav class="main-nav">
+				<ul class="main-nav_list">
+					<li class="main-nav_item">
+						<a href="#" id="link-all" class="main-nav_link">Все гифки</a>
+					</li>
+					<li class="main-nav_item">
+						<a href="#" id="link-top" class="main-nav_link">Топ</a>
+					</li>
+					<li class="main-nav_item">
+						<a href="#" id="link-new" class="main-nav_link">Новинки</a>
+					</li>
+				</ul>
+			</nav>
+			<form id="searchForm" action="index.html" class="search">
+				<input name="searchText" type="text" placeholder="Поиск гифки..." class="search-text">
+				<input name="searchSubmit" type="submit" value="Найти" class="search-submit">
+			</form>
+			<a href="#" id="login" class="login">Вход</a>
+		</div>
+	</header>
+	<main class="wrapper">
+		<aside class="main-aside">	
+			<nav>
+				<h3 class="aside-header">Категории</h3>
+				<ul class="aside-nav-list">
+							<li class="aside-nav-item"><a href="#" class="aside-nav-link" data-category="Видеоигры">Видеоигры</a></li>
+							<li class="aside-nav-item"><a href="#" class="aside-nav-link" data-category="Люди">Люди</a></li>
+							<li class="aside-nav-item"><a href="#" class="aside-nav-link" data-category="Животные">Животные</a></li>
+							<li class="aside-nav-item"><a href="#" class="aside-nav-link" data-category="Наука">Наука</a></li>
+							<li class="aside-nav-item"><a href="#" class="aside-nav-link" data-category="Спорт">Спорт</a></li>
+							<li class="aside-nav-item"><a href="#" class="aside-nav-link" data-category="Приколы">Приколы</a></li>
+						</ul>
+			</nav>
+		</aside>
+		<section class="main-content">
+			<article id="slider">
+				<h2 class="slider-header">Лучшие гифки за неделю:</h2>
+				<input checked type="radio" name="slider" id="switch1">
+				<input type="radio" name="slider" id="switch2">
+				<input type="radio" name="slider" id="switch3">
+				<input type="radio" name="slider" id="switch4">
+				<div id="slides">
+					<div id="overflow">
+						<div id="slider-image">
+							<article>
+								<div class="slide-about">
+									<div class="slider-title">crazy cat</div>
+									<div class="slider-desc">В каждом и з нас программист!</div>
+									<a href="#" class="slider-all">Посмотреть все</a>
+								</div>
+								
+								<img alt="slide1" src="img/gif/gif-1.gif">
+							</article>
+							<article>
+								<div class="slide-about">
+									<div class="slider-title">Nazva</div>
+									<div class="slider-desc">desc</div>
+								</div>
+								<a href="#" class="slider-all">Посмотреть все</a>
+								<img alt="slide2" src="img/gif/gif-1.gif">
+							</article>
+							<article>
+								<div class="slide-about">
+									<div class="slider-title">Nazva</div>
+									<div class="slider-desc">desc</div>
+								</div>
+								<a href="#" class="slider-all">Посмотреть все</a>
+								<img alt="slide3" src="img/gif/gif-1.gif">
+							</article>
+							<article>
+								<div class="slide-about">
+									<div class="slider-title">Nazva</div>
+									<div class="slider-desc">desc</div>
+								</div>
+								<a href="#" class="slider-all">Посмотреть все</a>
+								<img alt="slide4" src="img/gif/gif-1.gif">
+							</article>
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+			</article>	
+			<article class="main-content-gif" id="main-content-gif">	
+				<header class="content-header">
+					<div class="content-status" id="content-status">Лучшее из мира гифок:</div>
+					<nav class="content-nav hidden">
+						<ul class="content-nav-list">
+							<li class="content-nav-item"><a href="#" class="content-nav-link">Топ</a></li>
+							<li class="content-nav-item"><a href="#" class="content-nav-link">Новинки</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div id="main-content-wrap">
+					<ul class="gif-list">
+						<li class="gif-list-item">
+							<div class="gif-picture">
+								<a href="#" class="gif-list-link">
+									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
+								</a>
+							</div>
+							<div class="gif-description">
+								<a href="#" class="gif-title">Типичный юзер</a>
+								<div class="gif-data">
+									<div class="gif-username">Ivan</div>
+									<div class="gif-likes">5</div>
+								</div>
+							</div>
+						</li>
+						<li class="gif-list-item">
+							<div class="gif-picture">
+								<a href="#" class="gif-list-link">
+									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
+								</a>
+							</div>
+							<div class="gif-description">
+								<a href="#" class="gif-title">Типичный юзер</a>
+								<div class="gif-data">
+									<div class="gif-username">Ivan</div>
+									<div class="gif-likes">5</div>
+								</div>
+							</div>
+						</li>
+						<li class="gif-list-item">
+							<div class="gif-picture">
+								<a href="#" class="gif-list-link">
+									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
+								</a>
+							</div>
+							<div class="gif-description">
+								<a href="#" class="gif-title">Типичный юзер</a>
+								<div class="gif-data">
+									<div class="gif-username">Ivan</div>
+									<div class="gif-likes">5</div>
+								</div>
+							</div>
+						</li>
+						<li class="gif-list-item">
+							<div class="gif-picture">
+								<a href="#" class="gif-list-link">
+									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
+								</a>
+							</div>
+							<div class="gif-description">
+								<a href="#" class="gif-title">Типичный юзер</a>
+								<div class="gif-data">
+									<div class="gif-username">Ivan</div>
+									<div class="gif-likes">5</div>
+								</div>
+							</div>
+						</li>
+						<li class="gif-list-item">
+							<div class="gif-picture">
+								<a href="#" class="gif-list-link">
+									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
+								</a>
+							</div>
+							<div class="gif-description">
+								<a href="#" class="gif-title">Типичный юзер</a>
+								<div class="gif-data">
+									<div class="gif-username">Ivan</div>
+									<div class="gif-likes">5</div>
+								</div>
+							</div>
+						</li>
+						<li class="gif-list-item">
+							<div class="gif-picture">
+								<a href="#" class="gif-list-link">
+									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
+								</a>
+							</div>
+							<div class="gif-description">
+								<a href="#" class="gif-title">Типичный юзер</a>
+								<div class="gif-data">
+									<div class="gif-username">Ivan</div>
+									<div class="gif-likes">5</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="pagination">
+					<ul class="pagination-list">
+						<li class="pagination-item"><a href="#" class="pagination-link pagination-link-first">&lt;&lt;</a></li>
+						<li class="pagination-item"><a href="#" class="pagination-link" data-index="0">1</a></li>
+						<li class="pagination-item"><a href="#" class="pagination-link" data-index="1">2</a></li>
+						<li class="pagination-item"><a href="#" class="pagination-link pagination-link-current" data-index="2">3</a></li>
+						<li class="pagination-item"><a href="#" class="pagination-link" data-index="3">4</a></li>
+						<li class="pagination-item"><a href="#" class="pagination-link" data-index="4">5</a></li>
+						<li class="pagination-item"><a href="#" class="pagination-link pagination-link-last">&gt;&gt;</a></li>
+					</ul>
+				</div>
+			</article>
+			<article id="gifPage">
+				
+			</article>
+			
+		</section>
+	</main>
+	<footer>
+		<div class="wrapper">
+			<a href="github.io" class="autor-link">Проект на Github</a>
+			<a href="#" class="about-link">о нас</a>
+		</div>		
+	</footer>
+	<article id="modal-wrap" class="modal-wrap hidden">
+	</article>
+	<article id="modal-login" class="modal-login hidden">
+			<h3 class="modal-header">Вход</h3>
+			<form class="login-form" action="#">
+				<label for="login-email">Логин:</label>
+				<input id="login-email" type="email" placeholder="Ivanov@gmail.com">
+				<label for="login-pass">Пароль:</label>
+				<input id="login-pass" type="password">
+				<input id="login-submit" type="submit">
+				<span id="modal-close" class="modal-close"><i class="fas fa-times"></i></span>
+			</form>
+	</article>
+</body>
+	<script type="text/javascript" src="js/bd_gifItems.js"></script>
+	<script type="text/javascript" src="js/bd_comments.js"></script>
+	<script type="text/javascript" src="js/bd_users.js"></script>
+	<script type="text/javascript" src="js/pages.js"></script>
+	<script type="text/javascript" src="js/getGifItems.js"></script>
+	<script type="text/javascript" src="js/getComments.js"></script>
+	<script type="text/javascript" src="js/viewGifPage.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/navItems.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/showSortGif.js"></script>	
+</html>

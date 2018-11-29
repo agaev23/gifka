@@ -1,0 +1,131 @@
+main.wrapper{
+	position: relative;
+	height: 100%;
+	z-index: 5;
+}
+
+.main-content {
+	position: absolute;
+	padding-right: 10px;
+	width: calc(100% - 220px);
+	height: calc(100% - 100px);
+	top:65px;
+	right: 0;
+	background-color: #293448;
+	border: 15px solid #293448;
+	border-radius: 10px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+.content-header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-status{
+	padding: 10px;
+	padding-top: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+.content-nav-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 25px;
+}
+
+.gif-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.gif-list-item {
+	margin-bottom: 30px;
+	margin-right: calc((100% - 900px) / 2);
+}
+
+.gif-list-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.gif-list-item {
+	width: 300px;
+}
+
+.gif-list-link img{
+	width: 300px;
+	height: 300px;
+}
+
+.content-nav-item {
+	padding: 10px;
+	margin-right: 20px;
+	font-size: 22px;
+	border-bottom: 3px solid #2882f9;
+}
+
+.gif-data {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gif-title {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.pagination-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination-link{
+	display: block;
+	margin: 10px;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	font-weight: bold;
+}
+
+.pagination-link-current{
+	background-color: #5ac000;
+	cursor: default;
+}
+
+.pagination-link-hidden{
+	color: gray;
+	cursor: default;
+	border-color: gray;
+	font-weight: normal;
+	display: none;
+}
+
+.pagination-item:first-child .pagination-link,
+.pagination-item:last-child .pagination-link{
+	padding: 10px 15px;
+	display: block;
+}
