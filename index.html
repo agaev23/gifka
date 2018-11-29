@@ -31,10 +31,11 @@
 				</ul>
 			</nav>
 			<form id="searchForm" action="index.html" class="search">
-				<input name="searchText" type="text" placeholder="Поиск гифки..." class="search-text">
+				
+				<input id="search-text" name="searchText" type="text" placeholder="Поиск гифки..." class="search-text"><label for="search-text"><i class="fas fa-search"></i></label>
 				<input name="searchSubmit" type="submit" value="Найти" class="search-submit">
 			</form>
-			<a href="#" id="login" class="login">Вход</a>
+			<a href="#" id="login" class="login">Личный кабинет</a>
 		</div>
 	</header>
 	<main class="wrapper">
@@ -215,14 +216,17 @@
 				</div>
 			</article>
 			<article id="gifPage">
-				
 			</article>
-			
 		</section>
 	</main>
 	<footer>
 		<div class="wrapper">
-			<a href="github.io" class="autor-link">Проект на Github</a>
+			<a href="github.io" class="git-link">Проект на Github</a>
+			<ul class="social">
+				<li class="social-item"><a href="https://www.facebook.com" target="blank" class="social-link"><i class="fab fa-facebook"></i></a></li>
+				<li class="social-item"><a href="https://twitter.com" target="blank" class="social-link"><i class="fab fa-twitter-square"></i></a></li>
+				<li class="social-item"><a href="https://www.linkedin.com" target="blank" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+			</ul>
 			<a href="#" class="about-link">о нас</a>
 		</div>		
 	</footer>

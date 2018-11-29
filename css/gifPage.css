@@ -57,6 +57,7 @@
 	position: relative;
 	margin: 10px 0 5px;
 	font-size: 17px;
+	font-weight: 400;
 	color: #fff;
 }
 
@@ -77,6 +78,7 @@
 .comment-email{
 	margin: 3px 0;
 	font-size: 12px;
+	font-weight: 400;
 	color: #fff;
 }
 

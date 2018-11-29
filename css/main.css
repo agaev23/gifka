@@ -8,7 +8,7 @@ main.wrapper{
 	position: absolute;
 	padding-right: 10px;
 	width: calc(100% - 220px);
-	height: calc(100% - 100px);
+	height: calc(100% - 110px);
 	top:65px;
 	right: 0;
 	background-color: #293448;
@@ -87,6 +87,28 @@ main.wrapper{
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	color: #949494;
+}
+
+.gif-likes{
+	display: block;
+	position: relative;
+}
+
+.gif-likes::before{
+	display: block;
+	position: absolute;	
+  content: "\f06e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  left: -25px;
+	top: 2px;
+	font-size: 16px;
+}
+
+.gif-likes:hover::before {
+	font-weight: 900;
+	color: red;
 }
 
 .gif-title {

@@ -7,3 +7,22 @@ footer{
 	color: #fff;
 	z-index: 10;
 }
+
+.social-item{
+	display: inline-block;	
+}
+
+.social-item i{
+	padding: 2px;
+	font-size: 23px;
+}
+
+.git-link,
+.about-link {
+		width: 200px;
+		padding: 5px 0;
+}
+
+.about-link {
+	text-align: right;
+}

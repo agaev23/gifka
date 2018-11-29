@@ -44,8 +44,9 @@ a {
 	color: inherit;
 }
 	
-
-
+a:hover{
+	color: #5ac000;
+}
 
 .hidden {
 	display: none;

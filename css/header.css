@@ -66,6 +66,7 @@ header.main-header {
 }
 
 .search {
+	position: relative;	
 	display: block;
 	height: 50px;
 	padding: 5px;
@@ -74,6 +75,7 @@ header.main-header {
 }
 
 .search-text {
+	padding: 0 20px;
 	width: 300px;
 	height: 40px;
 	background: none;
@@ -81,6 +83,18 @@ header.main-header {
 	font-size: inherit;
 	border: none;
 	outline: none;
+	color: #5ac000;
+}
+
+.search-text + 	label {
+	position: absolute;	
+	left: 5px;
+	top: 12px;
+	font-size: 20px;
+}
+
+.search-text:focus + 	label i{
+	color: #5ac000;
 }
 
 .search-submit{
@@ -94,6 +108,22 @@ header.main-header {
 }
 
 .login{
+	position: relative;
 	padding: 0 15px;
 	line-height: 50px;
+}
+
+.login::before{
+	display: block;
+	position: absolute;	
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  left: -15px;
+	top: 2px;
+	font-size: 20px;
+}
+header label:hover i,
+a:hover{
+	color: #5ac000;
 }

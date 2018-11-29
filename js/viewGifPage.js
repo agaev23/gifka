@@ -56,9 +56,9 @@ function viewGifPage(id){
       gifPageContent.appendChild(commentsWrap);      
 
       getCommets(commentsWrap, id );
-      mainContentGif.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
+      // mainContentGif.scrollTo({
+      //   top: 0,
+      //   behavior: "smooth"
+      // });
       return false;
 }
