@@ -1,6 +1,7 @@
 showAllGIf.onclick = (() => {
   slider.style.display = "none";
   gifPageWrap.style.display = "none";
+  contactsWrap.style.display = "none";
   contentStatus.innerHTML = "Лучшее из мира гифок:";
   categoryPage = gifItemsData.slice();
   gifItems = new GetGifItems(categoryPage);
@@ -12,6 +13,7 @@ showAllGIf.onclick = (() => {
 showTopGIf.onclick = (() => {
   slider.style.display = "none";
   gifPageWrap.style.display = "none";
+  contactsWrap.style.display = "none";
   contentStatus.innerHTML = "Топовые гифки:";
   categoryPage = gifItemsData.slice();
   categoryPage.sort((a, b) => {
@@ -27,6 +29,7 @@ showTopGIf.onclick = (() => {
 showNewGIf.onclick = (() => {
   slider.style.display = "none";
   gifPageWrap.style.display = "none";
+  contactsWrap.style.display = "none";
   contentStatus.innerHTML = "Новинки:";
   categoryPage = gifItemsData.slice();
   categoryPage.sort((a, b) => {

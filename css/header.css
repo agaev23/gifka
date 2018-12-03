@@ -19,8 +19,6 @@ header.main-header {
 	justify-content: space-between;
 }
 
-
-
 .logo {
 	padding: 0 15px;
 	color: #fff;
@@ -126,4 +124,30 @@ header.main-header {
 header label:hover i,
 a:hover{
 	color: #5ac000;
+}
+
+.login-wrap{
+	position: relative;
+}
+
+.sub-menu{
+	display: none;
+	position: absolute;
+	width: 150px;
+	top: 50px;
+	left: 0;
+	background-color: #293448;
+}
+
+.login-wrap:hover .sub-menu{
+	display: block;
+}
+
+.sub-menu a{
+	padding: 15px;
+	border-bottom: 2px solid #5ac000;
+}
+
+.log-out{
+	display: none;
 }

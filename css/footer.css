@@ -18,11 +18,11 @@ footer{
 }
 
 .git-link,
-.about-link {
-		width: 200px;
+.about-contacts {
+		width: 150px;
 		padding: 5px 0;
 }
 
-.about-link {
+.about-contacts {
 	text-align: right;
 }

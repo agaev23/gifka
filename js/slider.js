@@ -3,7 +3,8 @@ var toSlider = document.getElementById("main-logo");
 toSlider.onclick = (() =>{
   slider.style.display = "block";
   gifPageWrap.style.display = "none";
-  mainContentGif.style.display = "none";  
+  mainContentGif.style.display = "none";
+  contactsWrap.style.display = "none";
   return false;
 });
 
@@ -53,6 +54,5 @@ toSlider.onclick = (() =>{
     img.setAttribute("alt", topGifs[i].imageAlt);
     img.setAttribute("src", topGifs[i].gifSrc);
     article.appendChild(img);
-
   }
 })();

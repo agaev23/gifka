@@ -1,4 +1,3 @@
-
 class Pages {
   constructor(
     items,
@@ -24,12 +23,13 @@ class Pages {
     );
     gifItems.action(id);
     let mainContent = document.getElementsByClassName("main-content")[0];
-    //  to fix in IE
-    // ________________________
-    // mainContent.scrollTo({
-    //   top: 0,
-    //   behavior: "smooth"
-    // });
+   
+    if (!(Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject)) {
+         mainContent.scrollTo({
+          top: 0,
+          behavior: "smooth"
+    });  
+   }    
     mainContentGif.style.display = 'block';
     pages.forEach( _ => {
       const elem = document.querySelector( _.search );
@@ -42,18 +42,8 @@ class Pages {
         page.action( _.id  );
         return false;
       }
-    } );
-    // setTimeout(function() {
-    //   let gifLink = document.getElementsByClassName("gif-list-link");
-    //   for (var i = 0; i < gifLink.length; i++) {
-    //     gifLink[i].onmousep = alert("sdsad");
-    //   }
-    // }, 1000);
-    
-    
-    
+    } );    
   }
-
 
   static generator(
     itemsAmount,

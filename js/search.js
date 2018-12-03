@@ -11,6 +11,7 @@ searchForm.searchSubmit.onclick = (() => {
   page = new Pages( categoryPage, 9 );
   page.action(1);
   slider.style.display = "none";
-    gifPageWrap.style.display = "none";
+  contactsWrap.style.display = "none";
+  gifPageWrap.style.display = "none";
   return false;
 });

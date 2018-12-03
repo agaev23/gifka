@@ -30,6 +30,26 @@
 	margin: 10px auto;
 }
 
+.download {
+	margin: 0 auto;
+	width: auto;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+
+.download:hover::before{
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	content: "\f019";
+	font-size: 25px;
+	color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
 .gif-page-content .gif-data{
 	margin-bottom: 20px;
 	color: #adadad;

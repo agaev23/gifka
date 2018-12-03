@@ -2,8 +2,10 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Gifka</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+	<link rel="stylesheet" href="src/fontawesome-free-5.5.0-web/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/aside.css">
@@ -12,6 +14,8 @@
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/gifPage.css">
 	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/contacts.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="main-header">
@@ -35,7 +39,15 @@
 				<input id="search-text" name="searchText" type="text" placeholder="Поиск гифки..." class="search-text"><label for="search-text"><i class="fas fa-search"></i></label>
 				<input name="searchSubmit" type="submit" value="Найти" class="search-submit">
 			</form>
-			<a href="#" id="login" class="login">Личный кабинет</a>
+			<div class="login-wrap">
+				<a href="#" id="login" class="login">Личный кабинет</a>
+				<div class="sub-menu">
+					<a href="#" id="log-in" class="log-in">Вход</a>
+					<a href="#" id="log-reg" class="log-reg">Регистрация</a>
+					<a href="#" id="log-out" class="log-out">Выход</a>
+				</div>
+			</div>
+			
 		</div>
 	</header>
 	<main class="wrapper">
@@ -115,92 +127,7 @@
 					</nav>
 				</header>
 				<div id="main-content-wrap">
-					<ul class="gif-list">
-						<li class="gif-list-item">
-							<div class="gif-picture">
-								<a href="#" class="gif-list-link">
-									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
-								</a>
-							</div>
-							<div class="gif-description">
-								<a href="#" class="gif-title">Типичный юзер</a>
-								<div class="gif-data">
-									<div class="gif-username">Ivan</div>
-									<div class="gif-likes">5</div>
-								</div>
-							</div>
-						</li>
-						<li class="gif-list-item">
-							<div class="gif-picture">
-								<a href="#" class="gif-list-link">
-									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
-								</a>
-							</div>
-							<div class="gif-description">
-								<a href="#" class="gif-title">Типичный юзер</a>
-								<div class="gif-data">
-									<div class="gif-username">Ivan</div>
-									<div class="gif-likes">5</div>
-								</div>
-							</div>
-						</li>
-						<li class="gif-list-item">
-							<div class="gif-picture">
-								<a href="#" class="gif-list-link">
-									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
-								</a>
-							</div>
-							<div class="gif-description">
-								<a href="#" class="gif-title">Типичный юзер</a>
-								<div class="gif-data">
-									<div class="gif-username">Ivan</div>
-									<div class="gif-likes">5</div>
-								</div>
-							</div>
-						</li>
-						<li class="gif-list-item">
-							<div class="gif-picture">
-								<a href="#" class="gif-list-link">
-									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
-								</a>
-							</div>
-							<div class="gif-description">
-								<a href="#" class="gif-title">Типичный юзер</a>
-								<div class="gif-data">
-									<div class="gif-username">Ivan</div>
-									<div class="gif-likes">5</div>
-								</div>
-							</div>
-						</li>
-						<li class="gif-list-item">
-							<div class="gif-picture">
-								<a href="#" class="gif-list-link">
-									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
-								</a>
-							</div>
-							<div class="gif-description">
-								<a href="#" class="gif-title">Типичный юзер</a>
-								<div class="gif-data">
-									<div class="gif-username">Ivan</div>
-									<div class="gif-likes">5</div>
-								</div>
-							</div>
-						</li>
-						<li class="gif-list-item">
-							<div class="gif-picture">
-								<a href="#" class="gif-list-link">
-									<img src="img/gif/gif-1-prev.gif" alt="crazy cat">
-								</a>
-							</div>
-							<div class="gif-description">
-								<a href="#" class="gif-title">Типичный юзер</a>
-								<div class="gif-data">
-									<div class="gif-username">Ivan</div>
-									<div class="gif-likes">5</div>
-								</div>
-							</div>
-						</li>
-					</ul>
+					
 				</div>
 
 				<div class="pagination">
@@ -217,6 +144,17 @@
 			</article>
 			<article id="gifPage">
 			</article>
+			<article id="contacts" class="contacts">
+				<h2 class="contacts-header">Наши контакты:</h2>
+				<span class="contacts-tel">Телефон : </span>
+				<a href="tel:+380985252679">+380985252679 </a></br>
+				<span class="contacts-email">Электронная почта : </span>
+				<a href="mailto:agaev2395@gmail.com">agaev2395@gmail.com</a></br>
+				<span class="contacts-address">Адрес: </span><span class="contacts-address">Киев, проспект Победы, 37К1</span>
+				<div class="contacts-map">
+					<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47301.878766247435!2d30.443722555191236!3d50.45162189194528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce82b6527281%3A0x18ccef150b71cabe!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCAzN9CaMSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1543761488385" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</article>
 		</section>
 	</main>
 	<footer>
@@ -227,19 +165,19 @@
 				<li class="social-item"><a href="https://twitter.com" target="blank" class="social-link"><i class="fab fa-twitter-square"></i></a></li>
 				<li class="social-item"><a href="https://www.linkedin.com" target="blank" class="social-link"><i class="fab fa-linkedin"></i></a></li>
 			</ul>
-			<a href="#" class="about-link">о нас</a>
+			<a href="#" class="about-contacts" id="contacts-link">Контакты</a>
 		</div>		
 	</footer>
 	<article id="modal-wrap" class="modal-wrap hidden">
 	</article>
 	<article id="modal-login" class="modal-login hidden">
 			<h3 class="modal-header">Вход</h3>
-			<form class="login-form" action="#">
+			<form id="login-form" class="login-form" action="#">
 				<label for="login-email">Логин:</label>
-				<input id="login-email" type="email" placeholder="Ivanov@gmail.com">
+				<input name="loginEmail" id="login-email" type="email" placeholder="Ivanov@gmail.com">
 				<label for="login-pass">Пароль:</label>
-				<input id="login-pass" type="password">
-				<input id="login-submit" type="submit">
+				<input name="loginPass" id="login-pass" type="password">
+				<input name = "loginSubmit" id="login-submit" type="submit">
 				<span id="modal-close" class="modal-close"><i class="fas fa-times"></i></span>
 			</form>
 	</article>
@@ -256,5 +194,6 @@
 	<script type="text/javascript" src="js/search.js"></script>
 	<script type="text/javascript" src="js/navItems.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/showSortGif.js"></script>	
+	<script type="text/javascript" src="js/showSortGif.js"></script>
+	<script type="text/javascript" src="js/contacts.js"></script>
 </html>

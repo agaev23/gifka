@@ -13,6 +13,7 @@ for (var i = 0; i <= navItems.length - 1; i++) {
 
     slider.style.display = "none";
     gifPageWrap.style.display = "none";
+  contactsWrap.style.display = "none";
     return false;
   })
 }

@@ -1,6 +1,5 @@
 #slider {
 	display: block;
-	/*display: none;	*/
 	margin: 0 auto;
 	position: relative;
 }
@@ -65,7 +64,6 @@
 #slider{
 	max-width: 800px;
 	position: relative;
-	margin-bottom: 50px;
 }
 
 #switch1:checked ~ #controls label:nth-child(4), 

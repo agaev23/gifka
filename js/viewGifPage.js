@@ -2,6 +2,7 @@ function viewGifPage(id){
       slider.style.display = "none";
       mainContentGif.style.display = "none";
       gifPageWrap.style.display = "block";
+      contactsWrap.style.display = "none";
       gifPageWrap.innerHTML = "";
 
       var gifPageContent = document.createElement("div");
@@ -25,12 +26,17 @@ function viewGifPage(id){
       picImg.setAttribute("class", "gif-img");
       picImg.setAttribute("alt", gifItemsData[id].imageAlt);
       
-
       let descLink = document.createElement("div");
       descLink.setAttribute("class", "gif-title");
       descLink.innerHTML = gifItemsData[id].title;
       gifPageContent.appendChild(descLink);
-      gifPageContent.appendChild(picImg);
+      let picDownload = document.createElement("a");
+      picDownload.setAttribute("download", "    ");
+      picDownload.setAttribute("class", "download");
+      picDownload.setAttribute("href", gifItemsData[id].gifSrc);
+      picDownload.setAttribute("target", "_blank");
+      gifPageContent.appendChild(picDownload);
+      picDownload.appendChild(picImg);
 
       let descData = document.createElement("div");
       descData.setAttribute("class", "gif-data");
@@ -56,9 +62,12 @@ function viewGifPage(id){
       gifPageContent.appendChild(commentsWrap);      
 
       getCommets(commentsWrap, id );
-      // mainContentGif.scrollTo({
-      //   top: 0,
-      //   behavior: "smooth"
-      // });
+
+      if (!(Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject)) {
+         mainContent.scrollTo({
+              top: 0,
+              behavior: "smooth"
+        });  
+      }
       return false;
 }
