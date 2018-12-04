@@ -64,7 +64,7 @@ function viewGifPage(id){
       getCommets(commentsWrap, id );
 
       if (!(Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject)) {
-         mainContent.scrollTo({
+         gifPageContent.scrollTo({
               top: 0,
               behavior: "smooth"
         });  
